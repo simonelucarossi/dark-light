@@ -2,8 +2,10 @@ html
     head
         title= title
 
-    body
-        div(class='switch-container')
-            div(class='switch-background dark')
-            div(class='switch-background light')
-            div(class='switch')
+        link(rel='stylesheet', href='/index.css', type='text/css')
+        
+
+    body(class='light')
+        div(class='switch-container light')
+            div(class='switch light' onclick='toggleSwitch()')
+        script(src='/script.js', type='text/javascript')

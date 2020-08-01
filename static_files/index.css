@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    transition: 0.3s background-color;
+}
+
+body.light {
+    background-color: #fafafa;
+}
+
+body.dark {
+    background-color: #222222;
+}
+
+.switch-container {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 1.5px;
+    transition: 0.3s background;
+}
+
+.switch-container.light {
+    background: #a5a5a580;
+    border: 1px solid #80808024;
+    box-shadow: inset 0px 0px 2px 1px #94929261;
+}
+
+.switch-container.dark {
+    background: #333333;
+    border: 1px solid #00000042;
+    box-shadow: inset 0px 0px 2px 1px #47474761
+}
+
+.switch {
+    height: 90%;
+    width: 60px;
+    border-radius: 30px;
+    margin-top: 1.0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s margin-left, .3s background-image, .3s background-color, .3s background-size;
+}
+
+.switch.light {
+    border: 1px solid #b1b1b1ba;
+    background-image: url(./sun.png);
+    box-shadow: 2px 0px 4px #a5a5a575;
+    margin-left: 0px;
+    background-color: #fbfbfb;
+    background-size: 40%;
+}
+
+.switch.dark {
+    background-image: url(./moon.png);
+    box-shadow: -2px 0px 4px #00000075;
+    margin-left: 38px;
+    background-color: #0000006b;
+    border: 1px solid #2c2c2cba;
+    background-size: 30%;
+}
