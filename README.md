@@ -3,7 +3,7 @@
 ![Information System Diagram](information_system_diagram.png)
 
 ## Introduction
-`dark-light` is a simple webApp to get stats about clicks on a switch to change light mode into dark mode.
+![Icon dark-light](icon_toggle.gif)  `dark-light` is a simple webApp to get stats about clicks on a switch to change light mode into dark mode.
 
 The project is developed with JavaScript and runs on the [nodeJS](https://nodejs.org/en/) runtime.
 
