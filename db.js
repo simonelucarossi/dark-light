@@ -13,7 +13,7 @@ function setupDb() {
   
   connection.query(
     'CREATE TABLE IF NOT EXISTS switches (indirizzo_ip VARCHAR(15) NOT NULL, mode VARCHAR(10), time_click DATETIME)',
-    function() { if (err) throw(err); }
+    function(err) { if (err) throw(err); }
   );
   
   connection.query(
