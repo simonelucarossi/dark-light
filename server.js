@@ -16,10 +16,14 @@ app.get('/', function (req, res) {
   })
 });
 
+app.get('/stats', function(req, res) {
+  db.getStats(req.ip, function(rows) { res.json(rows); });
+});
+
 app.post('/switches', function(req, res) {
   db.insertSwitch(req.ip, req.body.mode, function() { res.status(201).end(); });
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('App listening on port 3000!');
 });
