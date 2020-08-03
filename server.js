@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+var db = require('./db');
+db.setupDb();
+
 app.set('view engine', 'pug');
 app.set('views', './templates');
 
