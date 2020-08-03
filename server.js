@@ -10,7 +10,9 @@ app.set('views', './templates');
 app.use(express.static('static_files'));
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Home' });
+  db.getLastStatus(req.ip, function(lastStatus) {
+    res.render('index', { title: 'Home', lastStatus: lastStatus });
+  })
 });
 
 app.listen(3000, function () {

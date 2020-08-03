@@ -5,7 +5,7 @@ html
         link(rel='stylesheet', href='/index.css', type='text/css')
         
 
-    body(class='light')
-        div(class='switch-container light')
-            div(class='switch light' onclick='toggleSwitch()')
+    body(class=lastStatus)
+        div(class=`switch-container ${lastStatus}`)
+            div(class=`switch ${lastStatus}` onclick='toggleSwitch()')
         script(src='/script.js', type='text/javascript')
